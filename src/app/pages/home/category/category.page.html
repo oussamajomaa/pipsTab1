@@ -13,11 +13,11 @@
   <ion-grid>
 
     <ion-row>
-      <ion-col size="4" *ngFor="let category of categories">
-        <ion-button expand="block" class="btn" color="{{category.color}}" (click)="showData(category)">
-          <i class="{{category.icon}}"></i>
+      <ion-col size="4" *ngFor="let item of category">
+        <ion-button expand="block" class="btn" color="{{item.color}}" (click)="showSousCategory(item)">
+          <i class="{{item.icon}}"></i>
         </ion-button>
-        <p>{{category.name}}</p>
+        <p>{{item.category}}</p>
       </ion-col>
       
     </ion-row>

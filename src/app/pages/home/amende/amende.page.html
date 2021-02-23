@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="sousCategory"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Amende</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngIf="amende['contravention']" color={{oneCategory.color}}>
+
+    <ion-card-content >
+      <ion-card-header>
+      <ion-card-title><strong>{{amende['title']}}</strong></ion-card-title>
+      
+      <ion-card-subtitle><strong>Amende:</strong> {{amende['contravention'][0]['montant']}}</ion-card-subtitle>
+      <ion-card-subtitle><strong>Type:</strong> {{amende['contravention'][1]['type']}}</ion-card-subtitle>
+      <ion-card-subtitle><strong>Points:</strong> {{amende['contravention'][2]['points']}}</ion-card-subtitle>
+      <ion-card-subtitle><strong>Minorée:</strong> {{amende['contravention'][3]['minorée']}}</ion-card-subtitle>
+      <ion-card-subtitle><strong>Majorée:</strong> {{amende['contravention'][4]['majorée']}}</ion-card-subtitle>
+      <ion-card-subtitle><strong>Maxima:</strong> {{amende['contravention'][5]['maxima']}}</ion-card-subtitle>
+      <ion-card-subtitle><strong>Description:</strong> {{amende['contravention'][6]['description']}}</ion-card-subtitle>
+    </ion-card-header>
+    </ion-card-content>
+
+  </ion-card>
+</ion-content>

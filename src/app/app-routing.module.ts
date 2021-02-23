@@ -27,12 +27,12 @@ const routes: Routes = [
     loadChildren: () => import('./pages/home/points/points.module').then( m => m.PointsPageModule)
   },
   {
-    path: 'details',
-    loadChildren: () => import('./pages/home/category/details/details.module').then( m => m.DetailsPageModule)
+    path: 'sousCategory',
+    loadChildren: () => import('./pages/home/sous-category/sous-category.module').then( m => m.SousCategoryPageModule)
   },
   {
     path: 'amende',
-    loadChildren: () => import('./pages/home/category/amande/amande.module').then( m => m.AmandePageModule)
+    loadChildren: () => import('./pages/home/amende/amende.module').then( m => m.AmendePageModule)
   }
 ];
 @NgModule({

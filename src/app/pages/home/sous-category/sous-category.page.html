@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="category"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="{{oneCategory.color}}"><span
+        style="color: black; margin-right:5px;">{{oneCategory.category}}</span> <i class="{{oneCategory.icon}}"></i>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card *ngFor="let item of oneCategory.sousCategory" color="{{oneCategory.color}}">
+    <ion-card-content>
+      <ion-card-title (click)="showAmende(item)">
+        {{item['title']}}
+      </ion-card-title>
+      
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

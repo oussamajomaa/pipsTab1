@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { DetailsPageRoutingModule } from './details-routing.module';
+import { SousCategoryPageRoutingModule } from './sous-category-routing.module';
 
-import { DetailsPage } from './details.page';
+import { SousCategoryPage } from './sous-category.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    DetailsPageRoutingModule
+    SousCategoryPageRoutingModule
   ],
-  declarations: [DetailsPage]
+  declarations: [SousCategoryPage]
 })
-export class DetailsPageModule {}
+export class SousCategoryPageModule {}

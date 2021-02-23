@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { AmandePageRoutingModule } from './amande-routing.module';
+import { AmendePageRoutingModule } from './amende-routing.module';
 
-import { AmandePage } from './amande.page';
+import { AmendePage } from './amende.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    AmandePageRoutingModule
+    AmendePageRoutingModule
   ],
-  declarations: [AmandePage]
+  declarations: [AmendePage]
 })
-export class AmandePageModule {}
+export class AmendePageModule {}

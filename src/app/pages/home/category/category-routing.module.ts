@@ -4,15 +4,9 @@ import { Routes, RouterModule } from '@angular/router';
 import { CategoryPage } from './category.page';
 
 const routes: Routes = [
-  {path: '',component: CategoryPage},
-  {
-    path: 'details',
-    loadChildren: () => import('./details/details.module').then( m => m.DetailsPageModule)
-  },
-  {
-    path: 'amande',
-    loadChildren: () => import('./amande/amande.module').then( m => m.AmandePageModule)
-  },
+  {path: '',component: CategoryPage}
+  
+   
 ];
 
 @NgModule({

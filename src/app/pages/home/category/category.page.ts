@@ -1,4 +1,4 @@
-import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
 import { CategoriesService } from 'src/app/services/categories.service';
 
@@ -9,20 +9,17 @@ import { CategoriesService } from 'src/app/services/categories.service';
   styleUrls: ['./category.page.scss'],
 })
 export class CategoryPage implements OnInit {
-  categories:any[]
+  category:any
   
   constructor(public navCtrl:NavController, private categoryService:CategoriesService) {
-    this.categories=this.categoryService.categories
+    this.category=this.categoryService.category
    }
 
-  ngOnInit() { 
-    
+  ngOnInit() { }
+
+  showSousCategory(data){
+    this.categoryService.getSousGategory(data)
+    this.navCtrl.navigateRoot("sousCategory")
   }
 
-  
-  showData(data:any){
-
-    this.categoryService.getDescriptions(data)
-    this.navCtrl.navigateRoot('details')
-  }
 }
